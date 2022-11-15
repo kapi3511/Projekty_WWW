@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Kacper Lewczuk">
+    <title>Trójkąt zmodyfikowany</title>
+
+    <style>
+canvas {
+ border: 1px dashed black;
+}
+    </style>
+
+    <script>
+window.onload = function() {
+ var canvas = document.getElementById("drawingCanvas");
+ var context = canvas.getContext("2d");
+
+ context.fillStyle = "yellow";
+ context.fillRect(30,30,440,240);
+
+ context.moveTo(50,50);
+ context.lineTo(450,50);
+ context.lineTo(250,250);
+ context.closePath();
+
+ context.fillStyle = "green";
+ context.fill();
+
+ context.lineWidth = 7;
+ context.strokeStyle = "blue";
+ context.lineJoin = "round";
+ context.stroke();
+};
+    </script>
+</head>
+<body>
+    <canvas id="drawingCanvas" width="500" height="300"></canvas>
+</body>
+</html>

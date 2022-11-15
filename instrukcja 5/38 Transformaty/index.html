@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Kacper Lewczuk">
+    <title>Transformatory</title>
+
+    <style>
+canvas {
+ border: 1px dashed black;
+}
+    </style>
+
+    <script>
+    window.onload = function() {
+    var canvas = document.getElementById("drawingCanvas");
+    var context = canvas.getContext("2d");
+
+    context.fillStyle = "blue";
+    context.fillRect(0, 0, 50, 50);
+    
+    context.translate(70, 70);
+    context.fillStyle = "yellow";
+    context.fillRect(0, 0, 50, 50);
+
+    context.translate(70, 70);
+    context.fillStyle = "green";
+    context.fillRect(0, 0, 50, 50);
+};
+    </script>
+</head>
+<body>
+    <canvas id="drawingCanvas" width="500" height="300"></canvas>
+</body>
+</html>

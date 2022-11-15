@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publikowanie filmów</title>
+</head>
+<body>
+    <h3>Plik MP4 bez paska odtwarzania</h3>
+    <video src="http://graczyk.pwsz.glogow.pl/motylek/motylek.mp4">
+        Twoja przeglądarka nie obsługuje odtwarzania video.
+    </video>
+    <h3>Plik OGV z paskiem odtwarzania</h3>
+    <video controls="controls" src="http://graczyk.pwsz.glogow.pl/motylek/motylek.ogv">
+        Twoja przeglądarka nie obsługuje odtwarzania video.
+    </video>
+    <h3>Plik MP4 z paskiem odtwarzania i autoodtwarzaniem</h3>
+    <video controls="controls" autoplay="autoplay" src="http://graczyk.pwsz.glogow.pl/motylek/motylek.ogv">
+        Twoja przeglądarka nie obsługuje odtwarzania video.
+    </video>
+    <h3>Plik OGV bez paska odtwarzania, zapętleniem i autoodtwarzaniem</h3>
+    <video loop="loop" autoplay="autoplay" src="http://graczyk.pwsz.glogow.pl/motylek/motylek.ogv">
+        Twoja przeglądarka nie obsługuje odtwarzania video.
+    </video>
+    <h3>Plik w formacie MP4 i OGV, na wypadek nieobsługiwania jednego z nich przez przeglądarke, wraz z paskiem odtwarzania</h3>
+    <video controls="controls">
+        <source src="http://graczyk.pwsz.glogow.pl/motylek/motylek.ogv" type="video/ogg">
+        <source src="http://graczyk.pwsz.glogow.pl/motylek/motylek.mp4" type="video/mp4">
+    </video>
+</body>
+</html>

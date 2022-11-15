@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Kacper Lewczuk">
+    <title>Okrąg</title>
+
+    <style>
+canvas {
+ border: 1px dashed black;
+}
+    </style>
+
+    <script>
+    window.onload = function() {
+    var canvas = document.getElementById("drawingCanvas");
+    var context = canvas.getContext("2d");
+
+    var centerX = 250;
+    var centerY = 150;
+    var radius = 100;
+    var startingAngle = 0;
+    var endingAngle = 2 * Math.PI;
+
+    context.arc(centerX, centerY, radius, startingAngle,
+    endingAngle);
+    context.lineWidth = 7;
+    context.strokeStyle = "blue";
+    context.stroke();
+    context.fillStyle = "purple";
+    context.fill();
+};
+    </script>
+</head>
+<body>
+    <canvas id="drawingCanvas" width="500" height="300"></canvas>
+</body>
+</html>

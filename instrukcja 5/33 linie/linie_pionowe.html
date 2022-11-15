@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Kacper Lewczuk">
+    <title>Linie pionowe</title>
+    <style>
+canvas {
+ border: 1px dashed black;
+}
+    </style>
+    <script>
+window.onload = function() {
+ var canvas = document.getElementById("drawingCanvas");
+ var context = canvas.getContext("2d");
+ 
+ context.lineWidth = 20;
+ context.strokeStyle = "rgb(205,40,40)";
+ context.moveTo(125,30);
+ context.lineTo(125,270);
+ context.lineCap = "butt";
+ context.stroke();
+
+ context.beginPath();
+ context.strokeStyle = "rgb(0,128,255)";
+ context.moveTo(250,30);
+ context.lineTo(250,270);
+ context.lineCap = "round";
+ context.stroke();
+
+ context.beginPath();
+ context.strokeStyle = "rgb(120,0,170)";
+ context.moveTo(375,30);
+ context.lineTo(375,270);
+ context.lineCap = "square";
+ context.stroke();
+};
+ </script>
+</head>
+<body>
+ <canvas id="drawingCanvas" width="500" height="300"></canvas>
+</body>
+</html>

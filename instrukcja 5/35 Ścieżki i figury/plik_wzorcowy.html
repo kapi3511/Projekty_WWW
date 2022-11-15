@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Kacper Lewczuk">
+    <title>Trójkąt</title>
+
+    <style>
+canvas {
+ border: 1px dashed black;
+}
+    </style>
+
+    <script>
+window.onload = function() {
+ var canvas = document.getElementById("drawingCanvas");
+ var context = canvas.getContext("2d");
+ context.moveTo(250,50);
+ context.lineTo(50,250);
+ context.lineTo(450,250);
+ context.closePath();
+
+ context.fillStyle = "blue";
+ context.fill();
+
+ context.lineWidth = 10;
+ context.strokeStyle = "red";
+ context.stroke();
+};
+    </script>
+</head>
+<body>
+    <canvas id="drawingCanvas" width="500" height="300"></canvas>
+</body>
+</html>

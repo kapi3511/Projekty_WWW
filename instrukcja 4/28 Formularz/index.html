@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Kacper Lewczuk 1p">
+    <title>Formularz</title>
+</head>
+<body>
+<form action="http://www.roy.icenter.pl/form/" method="post">
+<fieldset>
+    <legend>Zostaw swój komentarz</legend>
+<input type="hidden" name="to" value="twój@adres-email.pl">
+<input type="hidden" name="subject" value="Temat wiadomości">
+    <dl>
+    <dt><strong>Imię:</strong></dt>
+        <dd><input type="text" name="imie" size="30"></dd>
+    <dt><strong>Nazwisko:</strong></dt>
+        <dd><input type="text" name="nazwisko" size="30"></dd>
+    <dt><strong>E-mail:</strong></dt>
+        <dd><input type="email" name="e-mail" size="30"></dd>
+    <dt><strong>Komentarz:</strong></dt>
+        <dd><textarea name="komentarz" cols="50" rows="30"></textarea></dd>
+    </dl>
+    <p>
+        <input type="submit" value="Wyślij">
+    </p>
+</fieldset>
+</form>
+</body>
+</html>

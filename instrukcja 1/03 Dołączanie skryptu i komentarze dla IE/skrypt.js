@@ -1,0 +1,1 @@
+alert("To jest skrypt wyświetlony przez skrypt.")
