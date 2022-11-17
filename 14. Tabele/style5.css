@@ -3,7 +3,7 @@ table {
     height: 100px;
     padding: 10px;
     margin: 15px auto 15px auto;
-    background-color: white;
+    background-color: cyan;
     border-radius: 15px;
-    box-shadow: 5px 5px 50px grey;
+    box-shadow: 5px 5px 50px #b23d3d;
 }
