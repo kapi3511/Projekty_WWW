@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kacper Lewczuk">
+    <title>Trampki</title>
+    <style>
+        ul {
+            list-style-type: none;
+        }
+
+        body {
+            background-color: #ffe4c4;
+            font-family: "Arial Nova";
+            color: #6a3d37;
+        }
+    </style>
+</head>
+<body>
+<form action="https://strona_przykladowa.pl/skrypt_form.php" method="post">
+    <h2>Kacper Lewczuk 1p/1</h2>
+    <h1>Formularz konkursu <q>Podrasuj swoje buty!</q></h1>
+    <p>Chcesz zamienić swoje stare trampki na nową parę zaprojektowanych przez siebie butów Forcefield? Napisz nam,
+        dlaczego sądzisz, że powinieneś pożegnać się ze swoimi wysłużonymi butami, a być może zostaniesz jednym z
+        laureatów konkursu!</p>
+    <fieldset>
+        <legend>Podstawowe dane</legend>
+        <ul>
+            <li><label>
+                Imię i nazwisko:
+                <input type="text" name="imie" value="">
+            </label></li>
+            <li><label>
+                E-mail:
+                <input type="email" name="email" value="">
+            </label></li>
+            <li><label>
+                Telephone:
+                <input type="tel" name="telefon" value="">
+            </label></li>
+            <li>Moje buty są TAKIE stare...</li>
+            <li><label>
+                <textarea name="opis" maxlength="300" cols="70" rows="5" placeholder="Nie więcej niż 300 znaków"></textarea>
+            </label></li>
+        </ul>
+    </fieldset>
+    <h2>Zaprojektuj własne trampki</h2>
+    <fieldset>
+        <legend>Własny projekt butów</legend>
+        <fieldset>
+            <legend>Kolor <em>(wybierz jeden)</em>:</legend>
+            <ul>
+                <li>
+                    <label><input type="radio" name="kolor" value="czerwony">Czerwony</label>
+                </li>
+                <li>
+                    <label><input type="radio" name="kolor" value="niebieski" checked>Niebieski</label>
+                </li>
+                <li>
+                    <label><input type="radio" name="kolor" value="czarny">Czarny</label>
+                </li>
+                <li>
+                    <label><input type="radio" name="kolor" value="srebrny">Srebrny</label>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Opcje <em>(możesz wybrać kilka)</em>:</legend>
+            <ul>
+                <li>
+                    <label><input type="checkbox" name="opcje" value="blyszczace_sznurowki">Błyszczące sznurówki</label>
+                </li>
+                <li>
+                    <label><input type="checkbox" name="opcje" value="metalowe_logo">Metalowe Logo</label>
+                </li>
+                <li>
+                    <label><input type="checkbox" name="opcje" value="swiecace_podeszwy">Świecące podeszwy</label>
+                </li>
+                <li>
+                    <label><input type="checkbox" name="opcje" value="odtwarzanie_mp3" checked>Odtwarzanie MP3</label>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Rozmiar</legend>
+            <p><label>Romziar zgodny ze standardowym rozmiarem butów:
+                <select name="rozmiar" size="1">
+                    <option value="37">37</option>
+                    <option value="38">38</option>
+                    <option value="39">39</option>
+                    <option value="40">40</option>
+                    <option value="41">41</option>
+                    <option value="42">42</option>
+                    <option value="43">43</option>
+                    <option value="44">44</option>
+                    <option value="45">45</option>
+                    <option value="46">46</option>
+                    <option value="47">47</option>
+                </select>
+            </label></p>
+        </fieldset>
+    </fieldset>
+    <p><input type="submit" value="Podrasuj swoje buty!">
+        <input type="reset" value="Resetuj"></p>
+</form>
+</body>
+</html>

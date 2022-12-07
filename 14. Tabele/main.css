@@ -1,0 +1,9 @@
+body {
+    background-color: cornflowerblue;
+    margin: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+a:hover {
+    background-color: green;
+}

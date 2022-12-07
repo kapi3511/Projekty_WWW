@@ -2,6 +2,7 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
+    <meta name="author" content="Kacper Lewczuk">
     <title>Stacja paliw</title>
     <link rel="stylesheet" href="styl3.css">
 </head>
@@ -13,7 +14,16 @@
     <a href="stacja.html"><img src="home.png" alt="dom"></a>
     <a href="obliczenia.html"><img src="znak.png" alt="znak"></a>
 </div>
-<div id="blok-glowny"></div>
+<div id="blok-glowny">
+    <h3>Oblicz koszt paliwa</h3>
+    <label for="rodzaj">Rodzaj paliwa (1-benzyna, 2-olej napędowy): </label> <br>
+    <input type="number" id="rodzaj"><br>
+    <label for="ile">Ile litrów:</label><br>
+    <input type="number" id="ile"><br>
+    <button>OBLICZ</button>
+    <p id="wynik"></p>
+    <script src="skrypt.js"></script>
+</div>
 <div id="blok-lewy">
     <a href="kwerendy.txt">Pobierz kwerendy</a>
 </div>
