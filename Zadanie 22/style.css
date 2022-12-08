@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    background-color: aqua;
+}
+
+#header {
+    background-color: black;
+    color: orange;
+    height: 70px;
+    text-align: center;
+}
+
+#menu {
+    float: left;
+    width: 30%;
+    height: 240px;
+    background-color: gray;
+    padding: 20px;
+}
+
+#content {
+    float: left;
+    width: 70%;
+    background-color: yellow;
+    padding: 20px;
+}
+
+#footer {
+    clear: both;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
