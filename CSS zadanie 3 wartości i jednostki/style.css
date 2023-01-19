@@ -1,0 +1,19 @@
+body {
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 270%;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+ol {
+    font-size: 1.2em;
+}
+
+ul {
+    font-size: 0.5em;
+}

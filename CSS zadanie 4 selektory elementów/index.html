@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 04 - selektory elementów</title>
+    <style>
+        body {
+            background-color: #9692B1;
+        }
+
+        #tytul {
+            color: green;
+        }
+
+        .red {
+            color: red;
+        }
+
+        ul > li > a {
+            color: yellow;
+        }
+
+        strong {
+            color: red;
+        }
+
+        strong + strong {
+            color: green;
+        }
+
+        strong + strong + strong {
+            color: blue;
+        }
+
+        h3 ~ p {
+            color: magenta;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Zadanie 04 CSS</h1>
+    <h2>Autor: Kacper Lewczuk 1p_1</h2>
+    <hr>
+</header>
+<section>
+    <h1 id="tytul">Witaj na mojej stronie</h1>
+    <p class="red">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, sit.</p>
+    <ul>
+        <li>Lorem ipsum dolor.</li>
+        <li><a href="https://google.com">Strona google</a></li>
+        <li>Lorem ipsum dolor sit amet.
+            <ol>
+                <li><a href="https://favebook.com">Strona Facebook</a></li>
+            </ol>
+        </li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet, <strong>consectetur</strong> adipisicing elit. <strong>Cumque</strong> dolorum error
+        hic ipsum
+        <strong>iusto</strong> placeat, rerum sed tenetur? Distinctio, vel!</p>
+    <br>
+    <h3>Naglowek 3</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, rem?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, sunt.</p>
+</section>
+</body>
+</html>
