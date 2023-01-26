@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>7. Pseudoklasy i pseudolelementy
+    </title>
+    <style>
+        p:hover::after {
+            content: url('buzka.png');
+        }
+
+        h2:hover::before {
+            content: 'Buuuuuuuuuuu!';
+            color: black;
+        }
+
+        h2:hover {
+            color: white;
+        }
+
+        #lorem {
+            width: 200px;
+        }
+
+        #lorem:first-line {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<h2>UWAGA! Straszne!!! Pod żadnym pozorem nie dawaj nad ten napis kursora!</h2>
+<p>Pseudoklasy i pseudoelementy. Najedź na mnie po uśmiech!</p>
+
+<div id="lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aut deserunt fugiat magni nemo,
+    quam voluptas. Consequatur, libero, perferendis. Autem cumque, dicta dolor dolorem eligendi exercitationem officiis
+    quibusdam quis vitae.
+</div>
+</body>
+</html>
