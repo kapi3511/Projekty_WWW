@@ -1,0 +1,178 @@
+body {
+    background-color: #567e7e;
+}
+
+#header {
+    padding-top: 10px;
+    width: 500px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #52403a;
+}
+
+#header h1 {
+    text-align: center;
+    margin: 0;
+    letter-spacing: 2px;
+    transition: transform 0.5s ease-in-out;
+    animation-name: tecza;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes tecza {
+    0% {
+        color: red
+    }
+    20% {
+        color: #4e734a
+    }
+    40% {
+        color: black
+    }
+    60% {
+        color: #07d3d3
+    }
+    80% {
+        color: #7efd01
+    }
+    100% {
+        color: red
+    }
+}
+
+#header h1:hover {
+    animation-play-state: paused;
+    transform: scale(1.8);
+    background-color: #07d3d3;
+    width: max-content;
+    margin-left: auto;
+    padding: 5px;
+    margin-right: auto;
+
+}
+
+#header img {
+    width: 100px;
+    position: relative;
+    animation-name: samolot;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes samolot {
+    0% {
+        left: 0;
+        transform: scaleX(1)
+    }
+    45% {
+        left: 400px;
+        transform: scaleX(1)
+    }
+    50% {
+        left: 400px;
+        transform: scaleX(-1)
+    }
+    95% {
+        left: 0;
+        transform: scaleX(-1)
+    }
+    100% {
+        left: 0;
+        transform: scaleX(1)
+    }
+}
+
+#galeria {
+    height: 80vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.karta {
+    position: absolute;
+    overflow: hidden;
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    transform: scale(0.5) rotate(var(--kat)) translate(var(--osx), var(--osy));
+    transition: 1s;
+}
+
+.karta:before {
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    right: 30px;
+    bottom: 120px;
+    background-position: top center;
+    background-image: var(--tlo);
+    z-index: 1;
+}
+
+.karta:after {
+    content: var(--podpis);
+    position: absolute;
+    bottom: 40px;
+    left: 10px;
+    right: 10px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.karta:hover {
+    transform: scale(1) translate(0, 0);
+    z-index: 10;
+}
+
+#k1 {
+     --kat: 10deg;
+     --osx: 550px;
+     --osy: 150px;
+     --tlo: url('wieszy1 .jpeg');
+     --podpis: 'Wisława Szymborska -w 1996 r. literacka Nagroda Nobla za całokształt twórczości';
+ }
+
+#k2 {
+    --kat: 15deg;
+    --osx: -300px;
+    --osy: -80px;
+    --tlo: url('maria.jpg');
+    --podpis: 'Maria Skłodowska-Curie - w 1903 r. w dziedzinie fizyki i chemii ';
+}
+
+#k3 {
+     --kat: -15deg;
+     --osx: 150px;
+     --osy: 180px;
+     --tlo: url('henryk.jpg');
+     --podpis: 'Henryk Sienkiewicz -w 1905 r. literacka Nagroda Nobla za całokształt pracy literackiej';
+ }
+
+#k4 {
+    --kat: -5deg;
+    --osx: -120px;
+    --osy: 100px;
+    --tlo: url('Władysław_Reymont.jpg');
+    --podpis: 'Władysław Reymont - w 1924 r. literacka Nagroda Nobla za książkę Chłopi';
+}
+
+#k5 {
+    --kat: 25deg;
+    --osx: -350px;
+    --osy: 250px;
+    --tlo: url('czeslaw.jpg');
+    --podpis: 'Czesław Miłosz -w 1980 r. literacka Nagroda Nobla za całokształt twórczości';
+}
+
+#k6 {
+    --kat: -5deg;
+    --osx: 250px;
+    --osy: -150px;
+    --tlo: url('lech.jpg');
+    --podpis: 'Lech Wałęsa -w 1983 r. Pokojowa Nagroda Nobla';
+}

@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+#container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo {
+    display: flex;
+    margin: 1em 0;
+    text-align: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 1em;
+}
+
+.logo span {
+    color: #F16529;
+    font-size: 1.5em ;
+}
+
+.header {
+    padding: 1em 2em;
+    background-color: darkgray !important;
+}

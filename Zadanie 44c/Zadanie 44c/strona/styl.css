@@ -1,0 +1,64 @@
+body {
+    background-color: #EEEEEE;
+}
+
+#container {
+    width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+#naglowek, #stopka {
+    background-color: #c0c0c0;
+    height: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#logo {
+    width: 400px;
+    float: left;
+    height: 100px;
+}
+
+#menu {
+    width: 600px;
+    float: left;
+}
+
+#baner {
+    background-color: #DDDDDD;
+    height: 200px;
+    clear: both;
+
+}
+
+#blok_glowny {
+    margin: 50px;
+}
+
+#stopka {
+    text-align: right;
+}
+
+#menu a {
+    color: #555555;
+    margin: 50px;
+    font-size: 200%;
+    text-decoration: none;
+}
+
+hr {
+    background-color: #c0c0c0;
+    width: 70%;
+    height: 2px;
+    border: none;
+}
+
+table {
+    text-align: left;
+}
+
+ul {
+    list-style-position: inside;
+}

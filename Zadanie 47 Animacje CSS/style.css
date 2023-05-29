@@ -1,0 +1,211 @@
+body {
+    background-color: #39393a;
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+#header {
+    padding-top: 10px;
+    width: 100%;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #e07349;
+}
+
+#header #samolot {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header h1 {
+    text-align: center;
+    width: max-content;
+    height: max-content;
+    margin: 0 auto;
+    letter-spacing: 2px;
+    font-size: 50px;
+    font-weight: 900;
+    transition: transform 0.5s ease-in-out;
+}
+
+#header #tecza {
+    animation-name: tecza;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes tecza {
+    0% {
+        color: #dedee0;
+        transform: rotate(3deg);
+    }
+    20% {
+        color: #60ab9a;
+        transform: rotate(-1deg);
+    }
+    40% {
+        color: #0acdff;
+        transform: rotate(2deg);
+    }
+    60% {
+        color: #83d5f1;
+        transform: rotate(-7deg);
+    }
+    80% {
+        color: #fdbeca;
+        transform: rotate(-4deg);
+    }
+    100% {
+        color: #dedee0;
+        transform: rotate(3deg);
+    }
+}
+
+#header h1:hover {
+    transform: scale(1.8);
+    background-color: #6b4c40;
+    width: max-content;
+    margin-left: auto;
+    padding: 5px;
+    margin-right: auto;
+    font-size: 0;
+}
+
+#header h1:hover:before {
+    content: 'Animacje CSS';
+    font-size: 50px;
+    color: #f3b69c;
+}
+
+#header h1:hover #tecza {
+    animation-play-state: paused;
+}
+
+#header img {
+    width: 100px;
+    padding-bottom: 10px;
+    position: relative;
+    animation-name: samolot;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes samolot {
+    0% {
+        left: 0;
+        transform: scaleX(1)
+    }
+    45% {
+        left: 600px;
+        transform: scaleX(1)
+    }
+    50% {
+        left: 600px;
+        transform: scaleX(-1)
+    }
+    95% {
+        left: 0;
+        transform: scaleX(-1)
+    }
+    100% {
+        left: 0;
+        transform: scaleX(1)
+    }
+}
+
+h2 {
+    color: #e6e6e6;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 800;
+}
+
+#galeria {
+    height: 700px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.karta {
+    position: absolute;
+    overflow: hidden;
+    width: 400px;
+    height: 500px;
+    margin: 10px;
+    perspective: 10000px;
+    transform: scale(0.5) rotate(var(--kat)) translate(var(--osx), var(--osy));
+    transition: 1s;
+}
+
+.karta:hover {
+    transform: scale(1) translate(0, 0);
+    z-index: 10;
+}
+
+.karta-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.karta:hover .karta-inner {
+    transform: rotateY(180deg);
+}
+
+.karta-przod {
+    background-color: #9c5f46;
+    color: #ecdad6;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.karta-tyl {
+    background-color: #297373;
+    color: #85ffc7;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+.karta-tyl p {
+    margin: 0;
+    padding: 10px 30px 30px;
+    font-size: 17px;
+    text-align: justify;
+}
+
+.karta-przod img {
+    margin: 30px 30px 15px;
+    width: 340px;
+    height: 350px;
+}
+
+.karta-przod p {
+    padding: 0;
+    margin: 0 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+#footer {
+    margin-top: 100px;
+    background-color: black;
+    text-align: center;
+    padding: 25px;
+    color: #dedede;
+}
+
+#footer p {
+    margin: 5px;
+}

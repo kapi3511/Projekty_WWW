@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: cadetblue;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    color: #DBCC93;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    clear: both;
+    background-color: #46af67;
+}
+
+.blok {
+    clear: both;
+}
+
+p {
+    width: 70%;
+    text-align: justify;
+    float: left;
+    padding: 20px;
+}
+
+img {
+    width: 30%;
+    padding: 20px;
+    float: left;
+}
+
+li {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#form {
+    display: flex;
+    justify-content: center;
+}

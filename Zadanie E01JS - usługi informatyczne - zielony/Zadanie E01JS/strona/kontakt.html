@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Kacper Lewczuk 1p">
+    <title>Pogotowie komputerowe</title>
+    <link rel="stylesheet" href="styl.css">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+</head>
+<body>
+<div id="container">
+    <div id="baner">
+        <img src="../img/animacja.gif" alt="Animacja">
+    </div>
+    <div id="menu">
+        <a href="index.html">O nas</a>
+        <a href="kontakt.html">Kontakt</a>
+    </div>
+    <div id="blok_glowny">
+        <div class="blok">
+
+        </div>
+        <div class="blok">
+            <h3>Formularz kontaktowy</h3>
+            <form action="#" method="post">
+                <table>
+                    <tr>
+                        <td><label for="imie">Imię</label></td>
+                        <td><input type="text" id="imie" name="imie"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="nazwisko">Naziwsko:</label></td>
+                        <td><input type="text" id="nazwisko" name="nazwisko"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">E-mail:</label></td>
+                        <td><input type="email" id="email" name="email"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="usluga">Usługa:</label></td>
+                        <td>
+                            <select id="usluga" name="usluga">
+                                <option value="naprawa">Naprawa komputera</option>
+                                <option value="odzyskiwanie">Odzyskiwanie danych</option>
+                                <option value="oprogramowanie">Problemy z oprogramowaniem</option>
+                                <option value="LAN">konfiguracja sieci LAN</option>
+                                <option value="inne">Inne</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><label>
+                            <input type="checkbox" name="kopia" checked>
+                            Wyślij kopie wiadomości</label></td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <td><input type="reset" id="reset" value="Resetuj"> <input type="submit" id="submit"
+                                                                                   value="Prześlij"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div class="blok">
+
+        </div>
+    </div>
+    <div id="stopka">
+        <p>Autor strony: <b>Kacper Lewczuk 1P_1</b></p>
+    </div>
+</div>
+</body>
+</html>

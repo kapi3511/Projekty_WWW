@@ -1,0 +1,63 @@
+#galeria {
+    font-family: 'Montserrat', sans-sherif;
+    background: radial-gradient(ellipse at center,  #2c5364, #203a43, #0f2027);
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: #333333;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.karta {
+    position: absolute;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 300px;
+    height: 400px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+
+    transform: scale(0.4) rotate(var(--angle)) translate(var(--x), var(--y));
+
+    transition: 500ms;
+}
+
+.karta:before {
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    right: 30px;
+    bottom: 120px;
+    background-position: top center;
+    background-image: var(--tlo);
+    z-index: 1;
+}
+
+.karta:after {
+    content: var(--podpis);
+    position: absolute;
+    bottom: 40px;
+    left: 10px;
+    right: 10px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.karta:hover {
+    transform: scale(1) translate(0, 0);
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+
+#k1 {
+    --angle: 10deg;
+    --x: -30%;
+    --y: -30%;
+    --tlo: url('wieszy1 .jpeg');
+    --podpis: 'Wisława Szymborska -w 1996 r. literacka Nagroda Nobla za całokształt twórczości';
+}

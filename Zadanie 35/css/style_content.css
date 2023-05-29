@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: rgb(76, 75, 77);
+    margin: 0;
+}
+
+#content {
+    color: rgb(224, 219, 215);
+    padding: 0 30px 30px;
+}
+
+.przerwa {
+    height: 15px;
+}
+
+#wstep {
+    margin-top: -15px;
+}
+
+h2 {
+    color: rgb(84, 133, 152);
+    font-size: 35px;
+    border-bottom: 1px solid white;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 23px;
+}
+
+p, li {
+    text-align: justify;
+    font-size: 17px;
+    line-height: 23px;
+}
+
+strong {
+    font-weight: 700;
+    background-color: rgba(86, 126, 126, 0.55);
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    padding: 8px;
+    border: 2px white solid;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li::before {
+    content: "\2022";
+    color: rgb(84, 133, 152);
+    font-weight: bolder;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+#footer {
+    margin-top: 100px;
+    width: 100%;
+    background-color: black;
+    color: #ababab;
+    text-align: center;
+    padding: 25px;
+    line-height: 20px;
+}
+
+#footer a {
+    color: rgb(86, 126, 126);
+}

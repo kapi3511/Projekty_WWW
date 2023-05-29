@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-family: 'Arial', Serif;
+}
+
+#container {
+    width: 1200px;
+    height: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#menu {
+    width: 200px;
+    height: 650px;
+    padding: 20px;
+    float: left;
+    background-color: aquamarine;
+}
+
+#content-start, #content-elipsa {
+    width: 1000px;
+    height: 650px;
+    text-align: center;
+    float: left;
+}
+
+#content-start {
+    background-color: white;
+}
+
+#content-elipsa {
+    background-color: chartreuse;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#content-elipsa img {
+    width: 500px;
+    height: 400px;
+}
+
+#footer {
+    width: 1200px;
+    height: 100px;
+    background-color: cyan;
+    clear: both;
+    text-align: center;
+}
